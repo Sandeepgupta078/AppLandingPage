@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[type="text"],
+input:where(:not([type])),
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+  appearance: none;
+  background-color: transparent;
+  border-color: unset;
+  border-width: 0;
+  border-radius: unset;
+  padding: unset;
+  font-size: unset;
+  line-height: unset;
+}
+
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="search"]:focus,
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: transparent;
+  border-color: transparent;
+}
+
+
+@layer components {
+  /*-------------------------------------
+  Input CSS
+--------------------------------------*/
+  .ui.input.round {
+    @apply rounded;
+  }
+
+  .ui.input.size-xs {
+    @apply h-[81px] pl-[23px] pr-[35px] text-base;
+  }
+
+  .ui.input.fill.white_a700 {
+    @apply bg-white-A700 shadow-md;
+  }
+
+  .ui.input {
+    @apply flex items-center justify-center cursor-text text-blue_gray-400_02 text-base font-medium bg-white-A700 shadow-md rounded;
+  }
+
+  /*-------------------------------------
+  Button CSS
+--------------------------------------*/
+  .ui.button.square {
+    @apply rounded-[0px];
+  }
+
+  .ui.button.round {
+    @apply rounded;
+  }
+
+  .ui.button.circle {
+    @apply rounded-[50%];
+  }
+
+  .ui.button.size-lg {
+    @apply h-[104px] px-[35px] text-base;
+  }
+
+  .ui.button.size-md {
+    @apply h-[60px] px-[21px] text-lg;
+  }
+
+  .ui.button.size-xs {
+    @apply h-[42px] px-2.5;
+  }
+
+  .ui.button.size-sm {
+    @apply h-[48px] px-3;
+  }
+
+  .ui.button.fill.white_a700_01 {
+    @apply bg-white-A700 text-black-900;
+  }
+
+  .ui.button.fill.black_900 {
+    @apply bg-black-900;
+  }
+
+  .ui.button.bordered.gray_900_00_gray_900_00 {
+    @apply border-t border-solid;
+  }
+
+  .ui.button.bordered.red_a200_01 {
+    @apply border-red-A200 border border-solid;
+  }
+
+  .ui.button.fill.red_a200_01 {
+    @apply bg-red-A200;
+  }
+
+  .ui.button {
+    @apply flex flex-row items-center justify-center text-center cursor-pointer;
+  }
+
+  /*-------------------------------------
+  Text CSS
+--------------------------------------*/
+  .ui.text.size-5xl {
+    @apply text-[32px] font-medium md:text-3xl sm:text-[28px];
+  }
+
+  .ui.text.size-xs {
+    @apply text-[4px] font-normal;
+  }
+
+  .ui.text.size-lg {
+    @apply text-[10px] font-medium;
+  }
+
+  .ui.text.size-s {
+    @apply text-[7px] font-normal;
+  }
+
+  .ui.text.size-2xl {
+    @apply text-xs font-medium;
+  }
+
+  .ui.text.size-3xl {
+    @apply text-base font-medium;
+  }
+
+  .ui.text.size-4xl {
+    @apply text-lg font-medium;
+  }
+
+  .ui.text.size-xl {
+    @apply text-[11px] font-medium;
+  }
+
+  .ui.text.size-md {
+    @apply text-[8px] font-normal;
+  }
+
+  .ui.text {
+    @apply text-black-900 font-clashdisplay;
+  }
+
+  /*-------------------------------------
+  Heading CSS
+--------------------------------------*/
+  .ui.heading.size-3xl {
+    @apply text-[64px] font-bold md:text-5xl;
+  }
+
+  .ui.heading.size-2xl {
+    @apply text-5xl font-bold md:text-[44px] sm:text-[38px];
+  }
+
+  .ui.heading.size-xl {
+    @apply text-[28px] font-semibold md:text-[26px] sm:text-2xl;
+  }
+
+  .ui.heading.size-4xl {
+    @apply text-[106px] font-bold md:text-5xl;
+  }
+
+  .ui.heading.size-s {
+    @apply text-[11px] font-semibold;
+  }
+
+  .ui.heading.size-md {
+    @apply text-sm font-bold;
+  }
+
+  .ui.heading.size-xs {
+    @apply text-[1px] font-extrabold;
+  }
+
+  .ui.heading.size-lg {
+    @apply text-lg font-semibold;
+  }
+
+  .ui.heading {
+    @apply text-black-900 font-clashdisplay;
+  }
+}

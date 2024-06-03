@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Clash Display;
+}
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.gray_900_00_gray_900_00_border {
+  border-image: linear-gradient(90deg, #16161600, #696969, #16161600) 1;
+}
+input {
+  background-color: transparent;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+ul {
+  margin: 0;
+  margin-inline: unset !important;
+  padding: 0;
+  list-style: none;
+}
+.undefined_undefined_border {
+  border-image: undefined;
+}
+
+.pr-36 {
+  padding-right: 9rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
+}
+
+
+.text-theme {
+  --tw-text-opacity: 1;
+  color: rgb(255 85 85 / var(--tw-text-opacity));
+}
+
+.hover\:text-theme:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 85 85 / var(--tw-text-opacity));
+}
