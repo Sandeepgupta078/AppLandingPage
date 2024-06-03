@@ -4,5 +4,15 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.7"
-  }
+  },
+  "name": "applandingpage",
+  "version": "1.0.0",
+  "description": "Generated with ❤️ By Sandeep",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
